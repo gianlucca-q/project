@@ -1,0 +1,144 @@
+
+@import url('https://fonts.cdnfonts.com/css/aventena');
+@import url('https://fonts.cdnfonts.com/css/silvera-peach');
+@import url('https://fonts.cdnfonts.com/css/memogram');
+@import url('https://fonts.cdnfonts.com/css/stangith');
+:root {
+    --principal-color: #c94c88;
+    --secondary-color: #333333;
+    --inverted-color: #ffffff;
+    --background-color: #eed9b9;
+    --font-family-titles: stangith;
+    --font-weight-titles: 600;
+    --font-family-text: AVENTENA;
+    --font-weight-text: 500;
+}
+::selection {
+    color: var(--background-color);
+    background: var(--secondary-color);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*----------------------------------------------------*/
+.body-page {
+    width: 100%;
+    position: relative;
+    padding-bottom: 58px;
+    min-height: 100vh;
+
+    color: var(--secondary-color);
+    background-color: var(--background-color);
+    font-family: var(--font-family-text);
+    font-weight: var(--font-weight-text);
+}
+/*----------------------------------------------------*/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    
+    margin: 0;
+    padding: 1.5% 2%;
+    background-color: var(--secondary-color);
+}
+header h6 {
+    margin: 0;
+    font-style: italic;
+    color: var(--inverted-color);
+    font-family: var(--font-family-titles);
+    letter-spacing: 1.5px;
+}
+/*----------------------------------------------------*/
+/*----------------------------------------------------*/
+/*----------------------------------------------------*/
+.cont-topic {
+    margin: 10% 0;
+}
+.cont-topic-title {
+    text-align: center;
+    margin: 3% 0 4%;
+}
+.topic-title {
+    margin: 0;
+    text-decoration: underline;
+    text-underline-offset: 7%;
+
+    color: var(--secondary-color);
+    font-family: var(--font-family-titles);
+    font-weight: var(--font-weight-titles);
+    font-style: italic;
+    font-size: 3em;
+}
+.cont-topic-desc {
+    text-align: center;
+}
+.topic-desc {
+    color: var(--secondary-color);
+    font-style: italic;
+    font-size: 1.2em;
+}
+/*----------------------------------------------------*/
+.cont-text {
+    margin: 0;
+    padding: 3% 4% 0;
+    text-align: justify;
+    border-style: 4px;
+    border-style: solid none;
+    border-color: var(--secondary-color);
+}
+.cont-text p {
+    margin-bottom: 3%;
+    color: var(--secondary-color);
+}
+/*----------------------------------------------------*/
+.cont-buttons{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin: 3% 5%;
+}
+.button-a, .button-a:visited {
+    text-decoration: none;
+}
+.button-prev {
+    margin: 0;
+    color: var(--secondary-color);
+}
+.button-next {
+    margin: 0;
+    color: var(--secondary-color);
+}
+/*----------------------------------------------------*/
+/*----------------------------------------------------*/
+/*----------------------------------------------------*/
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 4%;
+
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+footer p {
+    margin: auto;
+    letter-spacing: 1px;
+    color: var(--inverted-color);
+    font-family: var(--font-family-titles);
+}
+
+
+
+
+@media (min-width: 401px) {
+    .body-page {
+        background-color: red;
+    }
+}
